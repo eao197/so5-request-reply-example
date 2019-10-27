@@ -28,5 +28,6 @@ MxxRu::Cpp::composite_target( MxxRu::BUILD_ROOT ) {
 	end
 
 	required_prj 'sample/prj.rb'
+	required_prj 'sample_composability/prj.rb'
 }
 
