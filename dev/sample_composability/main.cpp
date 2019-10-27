@@ -88,7 +88,7 @@ class ponger final : public so_5::agent_t {
 	{}
 
 	void so_define_agent() override {
-		so_subscribe_self().event([this](mhood_t<ping> msg) {
+		so_subscribe_self().event([this](mhood_t<ping>) {
 			auto dice_roll = distr(gen);
 			std::cout << "ponger::on_ping " << dice_roll << "\n";
 			if (dice_roll > 0.5) {
